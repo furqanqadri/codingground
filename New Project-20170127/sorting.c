@@ -107,7 +107,24 @@ int partition(int *a,int start, int end)
   return pindx;
 }
 
-
+void insert_sort()
+{
+  int hole,i;
+  int value_to_insert;
+  for(i=1;i<MAXSIZE;i++)
+  {
+    value_to_insert=a[i];
+    hole=i;
+    /*compare against prev elemt*/
+    while(hole>0 && a[hole-1]>value_to_insert)
+    {
+        a[hole]=a[hole-1];
+        hole--;
+    }
+    if(hole!=i)
+      a[hole]=value_to_insert;
+  }
+}
 
   
     

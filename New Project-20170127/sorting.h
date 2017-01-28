@@ -9,3 +9,4 @@ void mergesort(int*,int);
 void merge(int*,int,int*,int,int*);
 void q_sortsort(int*,int,int);
 int partition(int*,int,int);
+void insert_sort();

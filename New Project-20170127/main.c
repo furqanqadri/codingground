@@ -10,7 +10,8 @@ int main()
     printf("\n");
     //bubblesort();
     //mergesort(a,MAXSIZE);
-    q_sort(a,0,MAXSIZE-1);
+    //q_sort(a,0,MAXSIZE-1);
+    insert_sort();
     printf("The sorted array is\n");
     display();
 }
