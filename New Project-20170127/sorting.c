@@ -78,4 +78,59 @@ void merge(int* l,int size_l,int* r,int size_r,int *c)
 }
 
 
+void q_sort(int *a,int start, int end)
+{
+  int pindx;
+  if(start>=end) return;
+  pindx=partition(a,start,end);
+  q_sort(a,start,pindx-1);
+  q_sort(a,pindx+1,end);
+  return;
+}
+
+
+int partition(int *a,int start, int end)
+{
+  int i;
+  int pivot=end;
+  int pindx=start;
+ 
+  for(i=0;i<end;i++)
+  {
+      if(a[i]<=a[pivot])
+      {
+      swap(&a[i],&a[pindx]);
+      pindx++;
+      }
+  }
+  printf("pindx %d\n",a[pindx]);
+  swap(&a[pindx],&a[pivot]);
+  return pindx;
+}
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

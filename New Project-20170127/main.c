@@ -8,8 +8,9 @@ int main()
     printf("The input array is\n");
     display();
     printf("\n");
-    
-    mergesort(a,MAXSIZE);
+    //bubblesort();
+    //mergesort(a,MAXSIZE);
+    q_sort(a,0,MAXSIZE-1);
     printf("The sorted array is\n");
     display();
 }
