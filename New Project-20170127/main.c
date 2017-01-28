@@ -1,10 +1,23 @@
 #include "sorting.h"
+#include "linked_list.h"
 
 int a[MAXSIZE]={10,5,43,3423,1233,64,323,2121,6767,212};
 void display(void);
 
 int main()
 {
+    linked_list();
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    /*
     printf("The input array is\n");
     display();
     printf("\n");
@@ -14,6 +27,7 @@ int main()
     insert_sort();
     printf("The sorted array is\n");
     display();
+    */
 }
 
 
