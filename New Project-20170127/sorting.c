@@ -92,21 +92,22 @@ void q_sort(int *a,int start, int end)
 int partition(int *a,int start, int end)
 {
   int i;
-  int pivot=end;
+  int pivot=a[end];
   int pindx=start;
  
-  for(i=0;i<end;i++)
+  for(i=start;i<end;i++)
   {
-      if(a[i]<=a[pivot])
+      if(a[i]<=pivot)
       {
       swap(&a[i],&a[pindx]);
       pindx++;
       }
   }
-  printf("pindx %d\n",a[pindx]);
-  swap(&a[pindx],&a[pivot]);
+  swap(&a[pindx],&a[end]);
   return pindx;
 }
+
+
 
   
     
