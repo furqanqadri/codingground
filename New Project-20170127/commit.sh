@@ -1,4 +1,4 @@
-t add -A . 
+git add -A . 
 
 
 
