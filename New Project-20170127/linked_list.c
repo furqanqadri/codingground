@@ -1,6 +1,7 @@
+#include<stdio.h>
 #include "linked_list.h"
 #include<stdlib.h>
-#include<stdio.h>
+
 
 typedef struct Node{
   int data;
@@ -17,12 +18,27 @@ void linked_list()
   insert(4,89);
   insert(5,47);
   print();
-  delete(2);
-  print();
-  head=reverse();
-  print();
+  print_reverse(head);
+  
+ // delete(2);
+  //print();
+  //head=reverse();
+  //print();
   
 }
+
+void print_reverse(node* head)
+{
+  while(head==NULL)
+  {
+    return;
+  }
+  
+  print_reverse(head->next);
+  printf("%d\t",head->data);
+  
+}
+
 
 void insert(int pos, int data)
 {

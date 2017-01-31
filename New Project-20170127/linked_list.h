@@ -3,3 +3,4 @@ void insert(int,int);
 void delete(int);
 void print(void);
 struct Node* reverse(void);
+void print_reverse(struct Node*);

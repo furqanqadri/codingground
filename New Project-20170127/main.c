@@ -1,5 +1,6 @@
 #include "sorting.h"
 #include "linked_list.h"
+#include<stdio.h>
 
 int a[MAXSIZE]={10,5,43,3423,1233,64,323,2121,6767,212};
 void display(void);
@@ -19,18 +20,19 @@ x ^ ((~(~0<<n))<< p+1-n);
   (byte & 0x08 ? '1' : '0'), \
   (byte & 0x04 ? '1' : '0'), \
   (byte & 0x02 ? '1' : '0'), \
-  (byte & 0x01 ? '1' : '0') 
+  (byte & 0x01 ? '1' : '0') ;
 
 int main()
 {
-  //Bit wise MACROS
+  
+  /*Bit wise MACROS
   int x=35;
   int y=BITS1(x,3,4);
   printf("x is %d\n",x);
   printf("x in binary\n "BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(x));
   printf("y is %d\n",y);
-  printf("y in binary\n "BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(y));
-   // linked_list();
+  printf("y in binary\n "BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(y));*/
+   linked_list();
     /*
     printf("The input array is\n");
     display();
