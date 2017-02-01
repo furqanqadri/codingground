@@ -1,5 +1,6 @@
 #include "sorting.h"
 #include "linked_list.h"
+#include "stack.h"
 #include<stdio.h>
 
 int a[MAXSIZE]={10,5,43,3423,1233,64,323,2121,6767,212};
@@ -24,6 +25,7 @@ x ^ ((~(~0<<n))<< p+1-n);
 
 int main()
 {
+  my_stack();
   
   /*Bit wise MACROS
   int x=35;
@@ -32,7 +34,7 @@ int main()
   printf("x in binary\n "BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(x));
   printf("y is %d\n",y);
   printf("y in binary\n "BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(y));*/
-   linked_list();
+   //linked_list();
     /*
     printf("The input array is\n");
     display();

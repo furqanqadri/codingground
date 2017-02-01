@@ -66,7 +66,7 @@ void print()
   node *temp=head;
   while(temp!=NULL)
   {
-  printf("%d\t %p\t ",temp->data,temp->next);
+  printf("%d\t ",temp->data);
   temp=temp->next;
   }
   printf("\n");
